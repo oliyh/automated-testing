@@ -1,14 +1,14 @@
-package automation;
+package automation.examples;
 
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-public class AddressParser4 {
+public class AddressParser3 {
 
     private final boolean strict;
     private final boolean makeCityNameUppercase;
 
-    public AddressParser4(boolean strict, boolean makeCityNameUppercase) {
+    public AddressParser3(boolean strict, boolean makeCityNameUppercase) {
         this.strict = strict;
         this.makeCityNameUppercase = makeCityNameUppercase;
     }
@@ -26,7 +26,7 @@ public class AddressParser4 {
 
     private String tryRead(String[] addressBits, int index) {
         try {
-            return addressBits[index].trim();
+            return addressBits[index];
         } catch (IndexOutOfBoundsException e) {
             if (strict) {
                 throw new IllegalArgumentException("Address is not formatted as expected", e);
@@ -37,7 +37,7 @@ public class AddressParser4 {
     }
 
     private String maybeUpperCaseCity(String city) {
-        if (makeCityNameUppercase && city != null) {
+        if (makeCityNameUppercase) {
             return city.toUpperCase();
         }
         return city;

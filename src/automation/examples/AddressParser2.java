@@ -1,4 +1,4 @@
-package automation;
+package automation.examples;
 
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;

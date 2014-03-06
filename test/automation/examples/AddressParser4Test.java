@@ -1,5 +1,6 @@
-package automation;
+package automation.examples;
 
+import automation.examples.AddressParser4;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;

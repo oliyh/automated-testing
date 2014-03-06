@@ -34,7 +34,9 @@
           <root url="jar://$MODULE_DIR$/../giraffe/trunk/deployment/deploy/lib/shipped/commons-lang-2.6.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/commons-lang-2.6-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>

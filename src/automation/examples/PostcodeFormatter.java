@@ -4,7 +4,7 @@ import org.apache.commons.lang.StringUtils;
 
 public class PostcodeFormatter {
 
-    public static String format(String postcode) {
+    public String format(String postcode) {
         if (postcode == null) {
             return null;
         }

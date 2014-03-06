@@ -13,11 +13,6 @@ public class AddressParser4 {
         this.makeCityNameUppercase = makeCityNameUppercase;
     }
 
-    /**
-     * Builds an @automation.Address class from an input string
-     * @param address An address consisting of property number, road name, city and postcode separated by commas
-     * @return An @automation.Address object
-     */
     public Address parse(String address) {
         String[] addressBits = address.split(",");
 

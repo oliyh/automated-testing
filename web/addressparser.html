@@ -147,7 +147,7 @@
 
             $('#propertyNumber').text('').text(addressBits[0]);
             $('#road').text('').text(addressBits[1]);
-            $('#city').text('').text(addressBits[2]);
+            $('#city').text('').text($('#ucaseCity').is(':checked:visible') ? addressBits[2].toUpperCase() : addressBits[2]);
             $('#postcode').text('').text(addressBits[3]);
 
             $('#loading').hide();
